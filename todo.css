@@ -1,0 +1,127 @@
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-color: lightgray;
+}
+
+
+
+nav{
+    position :fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+}
+
+nav img{
+    height:100px;
+    width: auto;
+}
+
+
+nav button{
+    height:100px;
+    width: auto;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: large;
+}
+
+main{
+    margin-top: 15%;
+   
+}
+
+#to-do-list{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pretty-btn{
+    height: 2.5rem;
+    border: 1px;
+    border-style: solid;
+    border-color: chartreuse;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.pretty-btn:active{
+    background-color: lightgreen;
+}
+
+.remove-btn{
+    height: auto;
+    border-color: red;
+    border-radius: 25%;
+}
+
+.remove-btn:active{
+    background-color: red;
+    color: white;
+}
+
+#to-do-list li{
+    border: solid;
+    border-radius: 10px;
+    background-color: grey;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+
+    
+}
+
+#add-new{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#add{
+    display: flex;
+    justify-content: space-between;
+    gap:20px
+}
+
+#add input{
+    border: none;
+    
+}
+
+#add input:hover{
+    border-radius: 10px;
+    border-color: chartreuse;
+} 
+
+
+label span {
+    transition: text-decoration-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+label:has(input:checked) span {
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+ footer{
+    display: flex;
+    justify-content: center;
+    
+ }
+
+
+
